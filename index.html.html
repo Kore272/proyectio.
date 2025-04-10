@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Conservación del Agua</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&family=Spectral+SC:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Spectral SC', serif; /* Fuente limpia para el contenido */
+            margin: 0;
+            padding: 0;
+            background-color: #2c2f3d; /* Fondo oscuro */
+            color: white;
+        }
+        header {
+            background-image: url('https://images.pexels.com/photos/1426718/pexels-photo-1426718.jpeg'); /* Fondo azul de agua */
+            background-size: cover;
+            color: white;
+            padding: 80px;
+            text-align: center;
+            background-position: center;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        }
+        header h1 {
+            font-family: 'Rock Salt', cursive; /* Fuente gótica vampírica */
+            font-size: 48px;
+            text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7);
+            background: rgba(0, 0, 0, 0.5); /* Fondo oscuro para el título */
+            padding: 10px;
+            display: inline-block;
+        }
+        header p {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        nav {
+            background-color: #006f8e; /* Azul oscuro */
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-family: 'Spectral SC', serif;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        nav a:hover {
+            color: #00b8e6; /* Resalta al pasar el ratón */
+        }
+        .container {
+            width: 100%;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #006f8e;
+            color: white;
+        }
+        .section-images {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Para adaptarse al tamaño de la pantalla */
+            gap: 20px;
+            justify-items: center;
+        }
+        .section-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+            object-fit: cover; /* Asegura que la imagen se recorte de forma proporcional */
+            transition: transform 0.3s ease-in-out;
+        }
+        .section-image:hover {
+            transform: scale(1.05);
+        }
+        h2 {
+            color: #00b8e6; /* Títulos en azul claro */
+            text-align: center;
+            font-family: 'Rock Salt', cursive;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+        .objectives {
+            margin-top: 40px;
+            background-color: #1e2a36;
+            padding: 30px;
+            border-radius: 10px;
+        }
+        .objectives h3 {
+            text-align: center;
+            color: #00b8e6;
+            font-family: 'Rock Salt', cursive;
+        }
+        .objectives p, .objectives ul {
+            font-size: 18px;
+            color: #d6e0e9;
+        }
+        .objectives ul {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <!-- Fondo con imagen de agua -->
+    <h1>Proyecto Conservación del Agua</h1>
+    <p>Educación y sensibilización ambiental para el uso responsable del agua.</p>
+</header>
+
+<nav>
+    <a href="#sobre">Sobre el Proyecto</a>
+    <a href="#actividades">Actividades</a>
+    <a href="#contacto">Contacto</a>
+    <a href="#objetivos">Objetivos del Proyecto</a> <!-- Nuevo enlace -->
+</nav>
+
+<div class="container" id="sobre">
+    <h2>Sobre el Proyecto</h2>
+    <div class="section-images">
+        <!-- Imágenes de agua, mares y ríos (azules) -->
+        <img src="https://images.pexels.com/photos/788200/pexels-photo-788200.jpeg" class="section-image" alt="Cascadas entre árboles">
+        <img src="https://images.pexels.com/photos/17231759/pexels-photo-17231759.jpeg" class="section-image" alt="Paisaje natural de agua">
+        <img src="https://images.pexels.com/photos/66346/pexels-photo-66346.jpeg" class="section-image" alt="Persona limpiando las manos bajo el agua">
+        <img src="https://images.pexels.com/photos/612341/pexels-photo-612341.jpeg" class="section-image" alt="Flujo de agua cerca">
+        <!-- Nuevas imágenes agregadas -->
+        <img src="https://images.pexels.com/photos/247600/pexels-photo-247600.jpeg" class="section-image" alt="Vista panorámica del lago en el bosque">
+        <img src="https://images.pexels.com/photos/10048547/pexels-photo-10048547.jpeg" class="section-image" alt="Naturaleza, gente y lago">
+    </div>
+    <p>Este proyecto busca sensibilizar a la comunidad local sobre la importancia del ahorro y uso responsable del agua.</p>
+    <p>El objetivo es fomentar prácticas sostenibles mediante talleres, charlas y campañas en redes sociales dirigidas a escuelas y familias.</p>
+</div>
+
+<div class="container" id="actividades">
+    <h2>Actividades y Talleres</h2>
+    <div class="section-images">
+        <!-- Imágenes de agua, mares y ríos (azules) -->
+        <img src="https://images.pexels.com/photos/279947/pexels-photo-279947.jpeg" class="section-image" alt="Vertiendo agua sobre vidrio">
+        <img src="https://images.pexels.com/photos/189349/pexels-photo-189349.jpeg" class="section-image" alt="Cuerpo de agua durante la hora dorada">
+        <img src="https://images.pexels.com/photos/1679772/pexels-photo-1679772.jpeg" class="section-image" alt="Naturaleza y agua de verano">
+        <img src="https://images.pexels.com/photos/861414/pexels-photo-861414.jpeg" class="section-image" alt="Grifo de acero inoxidable">
+        <!-- Nueva imagen agregada -->
+        <img src="https://images.pexels.com/photos/4762810/pexels-photo-4762810.jpeg" class="section-image" alt="Lago nublado y pintoresco">
+    </div>
+    <ul>
+        <li>Talleres en escuelas sobre el uso del agua.</li>
+        <li>Campañas de sensibilización en redes sociales.</li>
+        <li>Charlas informativas para familias y líderes comunitarios.</li>
+    </ul>
+</div>
+
+<!-- Nueva sección de Objetivos del Proyecto -->
+<div class="container" id="objetivos">
+    <div class="objectives">
+        <h3>Objetivos del Proyecto</h3>
+        <p><strong>1. Sensibilización y Educación Comunitaria:</strong></p>
+        <ul>
+            <li><strong>Ámbito:</strong> Educación y sensibilización.</li>
+            <li><strong>Efecto esperado:</strong> Aumentar el conocimiento sobre la importancia del ahorro de agua y generar una actitud positiva hacia su conservación.</li>
+            <li><strong>Meta:</strong> Alcanzar al menos 500 participantes en los talleres.</li>
+            <li><strong>Datos cualitativos:</strong> Opiniones de los participantes sobre qué prácticas consideran más fáciles de implementar o lo que aprendieron durante los talleres.</li>
+            <li><strong>Datos integrales:</strong> Medición del cambio en las percepciones y actitudes de los participantes sobre el uso del agua.</li>
+            <li><strong>Datos terminales:</strong> Evaluación del número de personas alcanzadas (500) y su participación activa en los talleres.</li>
+        </ul>
+
+        <p><strong>2. Campaña de Sensibilización en Redes Sociales:</strong></p>
+        <ul>
+            <li><strong>Ámbito:</strong> Comunicación y participación comunitaria.</li>
+            <li><strong>Efecto esperado:</strong> Llegar a un gran número de personas para concienciar sobre la conservación del agua y fomentar cambios de comportamiento.</li>
+            <li><strong>Meta:</strong> Involucrar a 1,000 personas y lograr que al menos el 30% de los participantes compartan sus experiencias de cambio de hábitos.</li>
+            <li><strong>Datos cualitativos:</strong> Testimonios y comentarios en redes sociales sobre el impacto de la campaña.</li>
+            <li><strong>Datos integrales:</strong> Medición de la interacción en las publicaciones de redes sociales (likes, compartidos, comentarios).</li>
+            <li><strong>Datos terminales:</strong> Alcanzar al menos 1,000 personas y lograr que al menos un 30% de ellas implementen prácticas sostenibles en su vida diaria.</li>
+        </ul>
+
+        <p><strong>3. Establecimiento de Alianzas para la Sostenibilidad:</strong></p>
+        <ul>
+            <li><strong>Ámbito:</strong> Alianzas y sostenibilidad.</li>
+            <li><strong>Efecto esperado:</strong> Garantizar la continuidad del proyecto a largo plazo mediante alianzas con actores clave.</li>
+            <li><strong>Meta:</strong> Formalizar al menos tres acuerdos de colaboración con organizaciones e instituciones locales.</li>
+            <li><strong>Datos cualitativos:</strong> Opiniones de las asociaciones y autoridades sobre cómo ven el impacto del proyecto y su disposición para continuar colaborando.</li>
+            <li><strong>Datos integrales:</strong> Medición del grado de compromiso de las partes involucradas en el seguimiento post-proyecto.</li>
+            <li><strong>Datos terminales:</strong> Formalización de acuerdos de colaboración y la creación de un plan de seguimiento con metas específicas.</li>
+        </ul>
+    </div>
+</div>
+
+<footer id="contacto">
+    <p>Contacto: educacion@conservacionagua.com</p>
+</footer>
+
+</body>
+</html>
+<nav>
+    <a href="#sobre">Sobre el Proyecto</a>
+    <a href="#actividades">Actividades</a>
+    <a href="#contacto">Contacto</a>
+    <a href="#objetivos">Objetivos del Proyecto</a>
+    <!-- Nuevo enlace a tu archivo local index.html -->
+    <a href="file:///C:/Users/DaniJ/OneDrive/Documentos/index.html">Ir a mi archivo local</a>
+</nav>
